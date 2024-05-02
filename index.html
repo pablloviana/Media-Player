@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheett" href="./componentes/styles.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <video id="video1"class="video-container"  src="./assets/video/leidemoore.mp4" poster="./assets/images/gordonmoore.jpeg"></video>
+        <div 
+            class="controls-container"
+            onmouseenter="displayControllers()"
+            onmouseleave="hidenControllers()">
+        
+            <div class="controls-row">
+                <img src="./assets/images/Back.png"
+                    class="control-btn" 
+                    title="Retroceder" 
+                    alt="retroceder 10 segundos"
+                    onclick="retroceder()">
+
+                <img src="assets/images/Foward.png"
+                    class="control-btn" 
+                    title="Avançar" 
+                    alt="avançar 10 segundos"
+                    onclick="avancar()">
+                
+                <img src="./assets/images/Decrease.png"
+                    class="control-btn" 
+                    title="Diminuir velocidade" 
+                    alt="diminuir velocidade"
+                    onclick="diminuir_vel()">
+                
+                <img src="./assets/images/Play.png"
+                    id="main-btn" 
+                    class="control-btn" 
+                    title="Reproduzir" 
+                    alt="Reproduzir">
+
+                <img src="./assets/images/Increase.png"
+                    class="control-btn" 
+                    title="Aumentar velocidade" 
+                    alt="aumentar velocidade"
+                    onclick="aumentar_vel()">
+
+                <img src="./assets/images/DiminuirVolume.png"
+                    class="control-btn" 
+                    title="Diminuir Volume" 
+                    alt="diminuir volume"
+                    onclick="vol_diminuir()">
+
+                <img src="./assets/images/AumentarVolume.png"
+                    class="control-btn" 
+                    title="Aumentar volume" 
+                    onclick="vol_aumentar()">
+
+                <img src="./assets/images/Stop.png"
+                    class="control-btn" 
+                    title="Parar" 
+                    onclick="stopVideo()">
+
+                <img src="assets/images/fullscreen.png"
+                    alt="Tela cheia"
+                    id="fullscreen"
+                    class="control-btn"
+                    title="Maximizar"/>
+                
+            </div> 
+
+        </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
